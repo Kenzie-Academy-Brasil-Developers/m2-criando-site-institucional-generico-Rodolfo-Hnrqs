@@ -1,1 +1,378 @@
-/* ------------------------------- Coloque sua estilização aqui ------------------------------- */
+body{
+    width: 100vw;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    padding: 2.5rem 14.75rem;
+    width: 100%;
+    height: auto;
+    
+    background-color: var(--grey-1);
+}
+
+header > p {
+    color: var(--white-1);
+    font-weight: 600;
+    font-size: var(--font-logo);
+}
+
+header > button{
+    border: 1px var(--white-1) solid;
+    color: var(--white-1);
+    background-color: var(--grey-1);
+    font-size: var(--font-6);
+    font-weight: 600;
+    padding: 1rem 0.80rem;
+}
+
+header > button:hover{
+    background-color: black;
+}
+
+.mainIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15.625rem 20.125rem;
+    gap: 2.75rem;
+    width: 100%;
+    height: auto;
+
+    background-color: var(--grey-2);
+}
+
+.mainIntro > h1{
+    color: var(--grey-6);
+    font-weight: 600;
+    font-size: var(--font-1);
+    text-align: center;
+}
+
+.mainIntro > h1 > span{
+    color: var(--color-primary);
+}
+
+.mainIntro > p{
+    color: var(--grey-4);
+    font-weight: 400;
+    font-size: var(--font-5);
+    line-height: 150%;
+    text-align: center;
+
+    width: 75%;
+}
+
+.mainIntro > span{
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--white-1);
+    font-weight: 600;
+    font-size: var(--font-6);
+
+    padding: 1.25rem 2rem;
+}
+
+.mainIntro > span:hover{
+    background-color: var(--color-secondary);
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    padding: 5.125rem 14.75rem;
+    width: 100%;
+    height: auto;
+
+    background-color: var(--grey-1);
+}
+
+.about > h2{
+    color: var(--grey-6);
+    font-weight: 600;
+    font-size: var(--font-3);
+}
+
+.about > span {
+    color: var(--grey-5);
+    font-weight: 400;
+    font-size: var(--font-5);
+    line-height: 150%;
+    text-align: justify;
+
+    width: 45%;
+}
+
+.facSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: auto;
+    padding: 6.25rem 14.75rem;
+
+    background-color: var(--grey-2);
+}
+
+.facTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 2.125rem;
+}
+
+.facTitle > h2{
+    color: var(--white-1);
+    font-weight: 600;
+    font-size: var(--font-2);
+}
+
+.facTitle > p{
+    color: var(--grey-4);
+    line-height: 150%;
+    font-weight: 400;
+    font-size: var(--font-5-5);
+
+    width: 90%;
+}
+
+.facTitle > button{
+    background-color: var(--color-primary);
+    color: var(--white-1);
+    font-weight: 600;
+    font-size: var(--font-6);
+    border: none;
+
+    padding: 1.25rem 2rem;
+    width: fit-content;
+}
+
+.facTitle > button:hover{
+    background-color: var(--color-secondary);
+}
+
+.facQuestions{
+    display: flex;
+    flex-direction: column;
+
+    gap: 3.75rem;
+}
+
+.facQuestions > span > h3{
+    color: var(--grey-6);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: var(--font-4);
+}
+
+.facQuestions > span > p{
+    color: var(--grey-4);
+    font-weight: 400;
+    font-size: var(--font-5);
+    line-height: 150%;
+}
+
+.commentsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 3.25rem 14.75rem;
+
+    background-color: var(--grey-2);
+}
+
+ul{
+    list-style: none;
+}
+
+.listItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 6.25rem;
+    margin-right: 6rem;
+}
+
+.listItem > span{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+
+}
+
+.listItem > span > h3{
+    color: var(--white-1);
+    font-weight: 500;
+    font-size: var(--font-4);
+
+    margin-bottom: 0.5rem;
+}
+
+.listItem > span > p{
+    color: var(--grey-4);
+    font-weight: 400;
+    font-size: var(--font-6);
+}
+
+.listItem > p{
+    color: var(--white-1);
+    font-weight: 400;
+    font-size: var(--font-6);
+    line-height: 150%;
+
+    width: 55%;
+    text-align: start;
+}
+
+.commentsAside{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-primary);
+    
+    height: 26.25rem;
+    width: 70%;
+    padding: 5rem 3.25rem;
+    gap: 2.25rem;
+    margin-left: 4rem;
+}
+
+.commentsAside > h2{
+    color: var(--white-1);
+    font-weight: 600;
+    font-size: var(--font-4);
+    text-align: start;
+}
+
+.commentsAside > p{
+    color: var(--grey-6);
+    font-weight: 400;
+    font-size: var(--font-6);
+}
+
+footer{
+    background-color: var(--grey-1);
+    text-align: center;
+    padding: 3.125rem 0rem;
+
+    color: var(--white-1);
+    font-weight: 600;
+    font-size: var(--font-logo);
+}
+
+.modalWrapper{
+    width: 31.25rem;
+    height: fit-content;
+
+    border: 2px solid var(--color-primary);
+
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.modalWrapper::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalBoxContainer{
+    background-color: var(--grey-2);
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+
+    padding: 2.5rem 1.75rem;
+    gap: 2rem;
+}
+
+.modalBoxContainer > h2 {
+    color: var(--white-1);
+    font-weight: 600;
+    font-size: var(--font-5);
+}
+
+.modalBoxContainer > p{
+    color: var(--grey-5);
+    font-weight: 400;
+    font-size: var(--font-7);
+}
+
+.modalBoxContainer > input{
+    background-color: var(--grey-1);
+    border: none;
+    outline-color: var(--color-primary);
+   
+    padding: 1.275rem 1.25rem;
+
+    color: var(--grey-6);
+    font-weight: 400;
+    font-size: var(--font-5);
+}
+
+.modalBoxContainer > input:hover{
+    background-color: var(--grey-3);
+}
+
+.modalBoxContainer > input::placeholder{
+    color: var(--grey-4);
+    font-weight: 400;
+    font-size: var(--font-5);
+}
+
+.sendBtn{
+    background-color: var(--color-primary);
+    border: none;
+    text-align: center;
+    color: var(--white-1);
+    font-weight: 600;
+    font-size: var(--font-6);
+
+    padding: 1.25rem 0rem;
+}
+
+.sendBtn:hover{
+    background-color: var(--color-secondary);
+}
+
+.closeBtn{
+    position: absolute;
+    top: 2.5rem;
+    right: 1.75rem;
+
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: none;
+
+    background-color: var(--grey-3);
+    color: #868E96;
+    font-weight: 600;
+    font-size: var(--font-5);
+    font-family: 'Nunito', sans-serif;
+}
+
+.closeBtn:hover{
+    background-color: var(--grey-1);
+}
+
+
+

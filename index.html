@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/global.css">
     <link rel="stylesheet" href="./src/styles/style.css">
     <title>Página Institucional Genérica</title>
 </head>
 <body>
     <header>
         <p>Generic Course</p>
-        <button>Entrar para a próxima turma</button>
+        <button class="showModal">Entrar para a próxima turma</button>
     </header>
     <main>
-        <div>
+        <div class="mainIntro">
             <h1>Desenvolvendo <span>suas</span> próximas habilidades</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos autem fuga accusantium sunt ratione pariatur eius laborum exercitationem accusamus illum laudantium, similique dolor, suscipit iste! Mollitia iure temporibus nam eligendi!</p>
             <span>Sobre nós</span>
         </div>
-        <div>
+        <div class="about">
             <h2>Quem somos nós?</h2>
             <span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aut, quos consequatur nemo error deserunt iste, fugit natus ipsum enim voluptatibus dolorem ea ab sint accusamus quas? Facilis, maiores in.</p>
             </span>            
         </div>
-        <section>
-            <div>
+        <section class="facSection">
+            <div class="facTitle">
                 <h2>Dúvidas frequentes</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorem veritatis veniam fuga. Itaque error quae et magni maxime ab quibusdam enim, animi dicta. Illo odio eum ex quo at?</p>
-                <span>Entrar para próxima turma</span>
+                <button class="showModal">Entrar para próxima turma</button>
             </div>
-            <div>
+            <div class="facQuestions">
                 <span>
                     <h3>Quanto custa o curso?</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima magnam beatae, facilis modi rem!</p>
@@ -49,11 +51,11 @@
                 </span>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="commentsContainer">
+            <div class="comments">
                 <ul>
                     <li>
-                        <div>
+                        <div class="listItem">
                             <span>
                                 <h3>Júlia Lima</h3>
                                 <p>Aluna na turma 2019</p>
@@ -62,7 +64,7 @@
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="listItem">
                             <span>
                                 <h3>Carlos Silva</h3>
                                 <p>Aluno na turma 2020</p>
@@ -71,7 +73,7 @@
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="listItem">
                             <span>
                                 <h3>Camila Souza</h3>
                                 <p>Aluna na turma 2019</p>
@@ -80,7 +82,7 @@
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="listItem">
                             <span>
                                 <h3>Matheus Erick</h3>
                                 <p>Aluno na turma 2018</p>
@@ -90,15 +92,25 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="commentsAside">
                 <h2>O que nossos alunos comentam?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolorum sint. Deleniti, hic repellendus incidunt distinctio voluptatem eius, consequuntur eligendi ipsa laborum animi rem ipsum aspernatur dolorem consequatur nobis sed!</p>
             </div>
         </section>
     </main>
+    <dialog class="modalWrapper">
+        <div class="modalBoxContainer">
+            <h2>Cadastro</h2>
+            <button class="closeBtn">X</button>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fugit voluptates odio dolor totam vel optio alias quos, nobis nulla quod officia aliquid laudantium asperiores culpa dolores inventore. Quis, qui.</p>
+            <input type="text" placeholder="Digite seu email">
+            <button type="submit" class="sendBtn">Entrar na lista para a próxima turma</button>
+        </div>
+    </dialog>
     <footer>
         <h3>Generic Course</h3>
     </footer>
-    <script src="./src/scripts/script.js"></script>
+    <!-- Scripts -->
+    <script src="/src/scripts/script.js"></script>
 </body>
 </html>
